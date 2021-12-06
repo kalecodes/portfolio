@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 75px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: salmon;
+}
+
+.bio {
+    border-bottom: 1px solid black;
+}
+
+.bio div {
+    margin: 25px 10%;
+    padding: 15px;
+    
+}
+
