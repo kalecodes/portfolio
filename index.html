@@ -42,13 +42,44 @@
         <section id="contact">
             <div>
                 <h2>My Info:</h2>
+                <address>
+                    <br />
+                    Location:<br/>
+                    Richmond, VA <br/>
+                    23220<br/><br />
+                    Phone: <br />
+                    804-754-6321<br/><br />
+                    Email: <br />
+                    <a href="mailto:kalen.wiley@gmail.com">kalen.wiley@gmail.com</a>
+                </address>
             </div>
             <div>
-                <h2>Interview Request:</h2>
-                <label></label>
-                <input>
-                <label></label>
-                <input>
+                <h2>Application Request:</h2><br />
+                <form>
+                    <label for="name">Enter company name:</label>
+                    <input type="text" placeholder="Company Name" name="name" id="name" class="form-input"/><br/><br />
+                    <label for="job-title">Enter job title:</label>
+                    <input type="text" placeholder="Job Title" name="job-title" id="job-title" class="form-input"/><br /><br />
+                    <label for="link">Enter application link:</label>
+                    <input type="url" placeholder="Application Link" name="link" id="link" class="form-input"/><br /><br />
+                    <p>What is the preferred work arrangement for this role?<br />
+                        <span class="radio-wrapper">
+                          <input type="radio" name="arrangement" id="in-person" />
+                          <label for="in-person">In-person</label>
+                        </span>
+                        <span class="radio-wrapper">
+                          <input type="radio" name="arrangement" id="hybrid" />
+                          <label for="hybrid">Hybrid</label>
+                        </span>
+                        <span class="radio-wrapper">
+                            <input type="radio" name="arrangement" id="remote" />
+                            <label for="remote">Remote</label>
+                        </span>
+                    </p> <br /><br />
+                    <button type="submit">
+                        Submit Request
+                    </button>
+                </form>
             </div>
         </section>
         <footer>
