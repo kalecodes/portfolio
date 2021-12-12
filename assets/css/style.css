@@ -1,36 +1,170 @@
+:root {
+    --background-light: #F6F4D2;
+    --background-dark: #9A8F97;
+    --accent-color: #c16200;
+    --primary-color: #2e382e;
+    --secondary-color: #412234;
+    --secondary-light: #b4c292;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--background-light);
+}
+
 header {
-    height: 75px;
-    padding: 0 25px;
+    height: 100px;
+    width: 100vw;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.nav-block {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-block img {
+    height: 45x;
+    width: 45px;
+    margin: 2.5px 2.5px;
 }
 
 header nav {
+    height: 150px;
+    width: 150px;
+    background-color: var(--secondary-light);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 75px;
+    right: 50px;
 }
 
-header nav a {
-    padding: 10px;
-    margin: 0 5px;
-    background-color: salmon;
+/*-----------------------------*/
+
+.hero {
+    height: 500px;
+    width: 75vw;
+    margin: 150px auto 0 auto;
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .bio {
-    border-bottom: 1px solid black;
+    height: 300px;
+    width: 700px;
+    background-color: var(--primary-color);
 }
 
-.bio div {
-    margin: 25px 10%;
-    padding: 15px;
-    
+ .bio h2, .bio p {
+    margin-left: 50px;
+    margin-top: 50px;
+    color: white;
 }
 
+.headshot{
+    height: 400px;
+    width: 300px;
+    border-radius: 50px;
+}
+/*------------------------------*/
+
+main {
+    width: 80vw;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main h2 {
+    margin: 100px 0 50px 0;
+}
+
+.project {
+    margin: 50px;
+    height: 800px;
+    width: 80vw;
+    background-color: var(--secondary-color);
+}
+
+.img {
+    width: 80vw;
+    height: 800px;
+}
+
+/*------------------------------*/
+
+#skills {
+    height: 200px;
+    width: 80vw;
+    margin: 50px auto 0 auto;
+    background-color: var(--secondary-light);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    height: 75px;
+    width: 75px;
+}
+
+/*-----------------------------*/
+
+#about-me {
+    height: 500px;
+    width: 80vw;
+    margin: 50px auto 0 auto;
+    background-color: var(--secondary-light);
+}
+
+/*-------------------------------*/
+
+#contact {
+    height: 500px;
+    width: 80vw;
+    margin: 50px auto 50px auto;
+    background-color: var(--secondary-light);
+    display: flex;
+}
+
+#contact div {
+    width: 35vw;
+    margin: 50px 50px;
+}
+
+/*-------------------------------*/
+
+footer {
+    border-top: 1px solid black;
+    height: 75px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer a {
+    padding: 10px 10px;
+}
