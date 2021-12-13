@@ -111,15 +111,6 @@ main h2 {
     width: 75px;
 }
 
-/*-----------------------------*/
-
-#about-me {
-    height: 500px;
-    width: 80vw;
-    margin: 50px auto 0 auto;
-    background-color: var(--secondary-light);
-}
-
 /*-------------------------------*/
 
 #contact {
@@ -159,15 +150,113 @@ footer a {
 
 /*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
 @media screen and (max-width: 980px) {
-   
+   .hero {
+       width: 100vw;
+   }
+
+   main {
+       width: 100vw;
+   }
+
+   .project {
+       width: 100vw;
+   }
+
+   .img {
+       width: 100vw;
+   }
+
+   #skills {
+        width: 100vw;
+   }
+
+   #contact {
+        width: 100vw;
+   }
+
+   footer {
+       font-size: smaller;
+   }
 }
 
 /*MEDIA QUERY FOR TABLETS AND SMALLER*/
 @media screen and (max-width: 768px) {
-   
+    .hero {
+        width: 100vw;
+    }
+    
+    .headshot  {
+        height: 200px;
+        width: 150px;
+    }
+
+    main {
+        width: 100vw;
+    }
+ 
+    .project {
+        width: 100vw;
+    }
+ 
+    .img {
+        width: 100vw;
+    }
+ 
+    #skills {
+         width: 100vw;
+    }
+ 
+    #contact {
+         width: 100vw;
+         height: 500px;
+    }
+ 
+    footer {
+        font-size: x-small;
+    }
 }
 
 /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
 @media screen and (max-width: 575px) {
-   
+    .hero {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bio { 
+        width: 100vw;
+        padding: 15px 0;
+    }
+
+    main {
+        width: 100vw;
+    }
+ 
+    .project {
+        width: 100vw;
+    }
+ 
+    .img {
+        width: 100vw;
+    }
+ 
+    #skills {
+         width: 100vw;
+         height: 400px;
+         flex-wrap: wrap;
+    }
+ 
+    #contact {
+         width: 100vw;
+         height: 1000px;
+         flex-direction: column;
+         align-items: center;
+    }
+ 
+    footer {
+        font-size: smaller;
+        flex-direction: column;
+        align-items: center;
+    }
 }
