@@ -31,28 +31,11 @@ header {
     color: white;
 }
 
-.nav-block {
-    height: 50px;
-    width: 50px;
-}
 
-.nav-block img {
-    height: 45x;
-    width: 45px;
-    margin: 2.5px 2.5px;
-}
-
-header nav {
-    height: 150px;
-    width: 150px;
-    background-color: var(--secondary-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 75px;
-    right: 50px;
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
 }
 
 /*-----------------------------*/
@@ -61,7 +44,7 @@ header nav {
     height: 500px;
     width: 75vw;
     margin: 150px auto 0 auto;
-    background-color: darkseagreen;
+    background-color: var(--secondary-light);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -167,6 +150,8 @@ footer {
 
 footer a {
     padding: 10px 10px;
+    text-decoration: none;
+    color: white;
 }
 
 /*-------------------------------*/
